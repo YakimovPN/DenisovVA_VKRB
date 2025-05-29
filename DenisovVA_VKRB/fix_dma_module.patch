@@ -1,0 +1,16 @@
+
+diff --git a/Core/Inc/stm32f0xx_hal_conf.h b/Core/Inc/stm32f0xx_hal_conf.h
+index e69de29..b1c3d5f 100644
+--- a/Core/Inc/stm32f0xx_hal_conf.h
++++ b/Core/Inc/stm32f0xx_hal_conf.h
+@@
+-/* #define HAL_DMA_MODULE_ENABLED   */
++#define HAL_DMA_MODULE_ENABLED
+
+@@
+-/* #ifdef HAL_DMA_MODULE_ENABLED */
+-/* #include "stm32f0xx_hal_dma.h" */
+-/* #endif */
++#ifdef HAL_DMA_MODULE_ENABLED
++#include "stm32f0xx_hal_dma.h"
++#endif
